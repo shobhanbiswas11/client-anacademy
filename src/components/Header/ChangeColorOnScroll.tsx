@@ -9,6 +9,7 @@ const useStyle = makeStyles((theme: Theme) => {
     trans: {
       boxShadow: "none",
       backgroundColor: "transparent",
+      color: "white",
     },
   };
 });

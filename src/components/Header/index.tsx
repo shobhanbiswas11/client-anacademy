@@ -43,7 +43,7 @@ const Header: React.SFC = () => {
             setOpen(true);
           }}
         >
-          <MenuIcon />
+          <MenuIcon color="inherit" />
         </IconButton>
         <HeaderDrawer hadleDrawerClose={hadleDrawerClose} open={open}>
           <HeaderLinks handleDrawerClose={hadleDrawerClose} />

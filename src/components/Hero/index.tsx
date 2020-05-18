@@ -12,51 +12,55 @@ import WithBG from "./WithBG";
 
 const useStyle = makeStyles((theme: Theme) => {
   return {
-    bold: {
-      fontWeight: "bolder",
-      color: theme.palette.grey[800],
+    root: {
+      color: "white",
+      height: "100%",
+      display: "flex",
+      flexFlow: "column",
+      alignItems: "center",
+      justifyContent: "center",
     },
-    thin: {
-      fontWeight: "lighter",
-      color: theme.palette.grey[600],
+    name: {
+      // fontWeight: "bold",
+      fontSize: "3.4em",
+      letterSpacing: "1px",
+    },
+    subtitle: {
+      lineHeight: "1.4rem",
     },
     colored: {
-      color: theme.palette.primary.main,
+      color: theme.palette.primary.light,
     },
   };
 });
 
 const Hero: React.SFC = () => {
-  const { bold, thin, colored } = useStyle();
+  const { root, name, subtitle, colored } = useStyle();
 
   return (
     <WithBG>
-      <Container>
-        <Header />
-        <Box paddingTop="12rem" paddingBottom="5rem" textAlign="center">
-          <Typography component="h1" variant="h3">
-            <span className={bold}>We are ready to start</span>{" "}
-            <span className={thin}>from where you stuck</span>
+      <Header />
+      <Container className={root}>
+        <Box marginBottom="2.5rem">
+          <Typography variant="h1" className={name} align="center" gutterBottom>
+            An Academy
           </Typography>
-          <Box my={3} width="90%" mx="auto">
-            <Typography>
-              A Ninja Level <span className={colored}>Guide Centre </span>For{" "}
-              <span className={colored}>WBCS</span> And All Other Comparative
-              Exams.
-            </Typography>
-          </Box>
+          <Typography variant="subtitle1" align="center" className={subtitle}>
+            A Ninja Level Guide Center For <span className={colored}>WBCS</span>{" "}
+            And All Other <span className={colored}>Comparative Exams</span>.
+          </Typography>
         </Box>
-        <Box textAlign="center">
+
+        <Box>
           <Button
-            style={{ marginRight: "1rem" }}
-            variant="contained"
             color="primary"
-            size="large"
+            variant="contained"
+            style={{ marginRight: "1rem" }}
           >
             Demo Class
           </Button>
-          <Button variant="contained" color="primary" size="large">
-            Contact Us
+          <Button color="primary" variant="contained">
+            Enroll
           </Button>
         </Box>
       </Container>

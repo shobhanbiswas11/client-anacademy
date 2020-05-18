@@ -6,11 +6,11 @@ const useStyle = makeStyles((theme: Theme) => {
   return {
     root: {
       background: `linear-gradient(
-        rgba(255, 255, 255, 0.9), 
-        rgba(255, 255, 255, 0.3)
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
         ),
         url(${heroImg})`,
-      minHeight: "100vh",
+      height: "100vh",
       //   backgroundSize: "cover",
       backgroundAttachment: "fixed",
     },
