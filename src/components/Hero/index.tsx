@@ -21,7 +21,7 @@ const useStyle = makeStyles((theme: Theme) => {
       justifyContent: "center",
     },
     name: {
-      // fontWeight: "bold",
+      fontWeight: "bold",
       fontSize: "3.4em",
       letterSpacing: "1px",
     },
@@ -56,6 +56,8 @@ const Hero: React.SFC = () => {
             color="primary"
             variant="contained"
             style={{ marginRight: "1rem" }}
+            href="https://www.youtube.com/channel/UCc6yZccDRaOcKxwQIwBYqtA"
+            target="_blank"
           >
             Demo Class
           </Button>

@@ -7,12 +7,15 @@ const useStyle = makeStyles((theme: Theme) => {
     root: {
       background: `linear-gradient(
         rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.5)
         ),
         url(${heroImg})`,
       height: "100vh",
       //   backgroundSize: "cover",
       backgroundAttachment: "fixed",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "left",
+      backgroundSize: "cover",
     },
   };
 });

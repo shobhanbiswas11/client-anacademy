@@ -34,7 +34,7 @@ const RenderCard = (Icon: any, heading: string, content: string) => {
   const { iconHolder } = useStyle();
 
   return (
-    <Card>
+    <Card key={heading}>
       <div className={iconHolder}>
         <Icon />
       </div>
@@ -60,19 +60,19 @@ const RenderCard = (Icon: any, heading: string, content: string) => {
 const DATA = [
   {
     Icon: BusinessIcon,
-    heading: "Heading",
+    heading: "Heading 1",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi magni fugiat veritatis, officiis voluptatem odio voluptatibus fuga aperiam explicabo accusantium. Natus iusto sed quis, est omnis distinctio nemo modi. Nisi.",
   },
   {
     Icon: BusinessIcon,
-    heading: "Heading",
+    heading: "Heading 2",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloribus accusantium esse velit voluptates voluptatibus soluta eligendi dicta facere quisquam accusamus, numquam consequatur sunt ratione quo nostrum animi dignissimos iste alias totam dolor cumque quae quibusdam possimus. Quos, sunt at!",
   },
   {
     Icon: BusinessIcon,
-    heading: "Heading",
+    heading: "Heading 3",
     content:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni doloribus accusantium esse velit voluptates voluptatibus soluta eligendi dicta facere quisquam accusamus, numquam consequatur sunt ratione quo nostrum animi dignissimos iste alias totam dolor cumque quae quibusdam possimus. Quos, sunt at!",
   },

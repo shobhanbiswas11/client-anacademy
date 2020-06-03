@@ -14,8 +14,8 @@ const SubjectWiseLecture: React.SFC = () => {
   return (
     <Section title="Subject Wise Lecture">
       <Grid container spacing={2}>
-        {SUBJECT.map((sub) => (
-          <Grid item xs={4}>
+        {SUBJECT.map((sub, i) => (
+          <Grid item xs={4} key={sub.name + i}>
             <Paper
               elevation={4}
               style={{

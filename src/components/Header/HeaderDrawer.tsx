@@ -6,11 +6,9 @@ const HeaderDrawer: React.SFC<{
   hadleDrawerClose: () => void;
 }> = ({ open, hadleDrawerClose, children }) => {
   return (
-    <div>
-      <Drawer anchor="right" open={open} onClose={hadleDrawerClose}>
-        {children}
-      </Drawer>
-    </div>
+    <Drawer anchor="right" open={open} onClose={hadleDrawerClose}>
+      {children}
+    </Drawer>
   );
 };
 

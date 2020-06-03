@@ -23,7 +23,7 @@ const HorizontalSection: React.SFC<HorizontalSectionProps> = ({
         </Typography>
         <Grid container spacing={2}>
           {children.map((child) => (
-            <Grid item xs={12}>
+            <Grid item xs={12} key={Math.random().toString()}>
               {child}
             </Grid>
           ))}

@@ -5,6 +5,7 @@ import theme from "./theme";
 import WhatWeProvide from "./components/WhatWeProvide";
 import Books from "./components/Books";
 import SubjectWiseLecture from "./components/SubjectWiseLecture";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Books />
         <SubjectWiseLecture />
       </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
